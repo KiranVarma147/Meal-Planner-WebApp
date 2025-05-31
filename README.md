@@ -1,9 +1,9 @@
 # Meal-Planner-WebApp
 
-1.)	Download and follow the displayed instructions to install XAMPP application (to host the project by local server).
-2.)	**Copy paste the newproject folder in this XAMPP path: C:\xampp\htdocs\...
-3.)	Start MySQL and Apache from XAMPP control panel.
-4.)	Create a new database namely “recipe_app” from “http://localhost/phpmyadmin/” (server admin).
+1.)	Download and follow the displayed instructions to install XAMPP application (to host the project by local server).  
+2.)	**Copy paste the newproject folder in this XAMPP path: C:\xampp\htdocs\...  
+3.)	Start MySQL and Apache from XAMPP control panel.  
+4.)	Create a new database namely “recipe_app” from “http://localhost/phpmyadmin/” (server admin).  
 
 5.)	Create “comments”, “meal_plans”, “preferences”, “recipes”, “shopping_list”, and “user” tables under the database. To create the tables:
 a.	Select “recipe_app” database.
@@ -65,8 +65,8 @@ CREATE TABLE IF NOT EXISTS preferences (
     dietary_preferences VARCHAR(255) NOT NULL,
     allergies VARCHAR(255) NOT NULL,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
-) ENGINE=InnoDB;
- 
+) ENGINE=InnoDB;  
+   
 6.)	Once the setup is done, Visit the website with “http://localhost/newproject/ “ from any browser to launch the project.
  
 
